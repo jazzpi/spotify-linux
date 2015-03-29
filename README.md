@@ -4,7 +4,7 @@ A package adding Spotify integration for Linux.
 
 Heavily inspired by [jakemarsh/atom-spotify](https://github.com/jakemarsh/atom-spotify).
 
-![](spotify-linux.png)
+![](https://raw.githubusercontent.com/jazzpi/spotify-linux/master/spotify-linux.png)
 
 Displays the currently playing song in the status bar. You can format the
 string however you like (you can use HTML!), with these placeholders:
