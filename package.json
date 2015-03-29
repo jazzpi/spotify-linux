@@ -1,0 +1,23 @@
+{
+  "name": "spotify-linux",
+  "main": "./lib/spotify-linux",
+  "version": "0.1.0",
+  "description": "Manage the Spotify application for Linux",
+  "repository": "https://github.com/atom/spotify-linux",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "dependencies": {
+     "abstract-socket": "git://github.com/jazzpi/node-abstractsocket.git",
+     "dbus-native": "^0.1.3"
+  },
+  "providedServices": {
+      "spotify-linux": {
+          "description": "Spotify integration for Linux",
+          "versions": {
+              "0.1.0": "provideSpotify"
+          }
+      }
+  }
+}

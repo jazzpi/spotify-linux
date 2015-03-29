@@ -1,0 +1,23 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'Spotify'
+      'submenu': [
+        {
+          'label': 'Next'
+          'command': 'spotify-linux:next'
+        }
+        {
+          'label': 'Previous'
+          'command': 'spotify-linux:previous'
+        }
+        {
+          'label': 'Play/Pause'
+          'command': 'spotify-linux:togglePlay'
+        }
+      ]
+    ]
+  }
+]
