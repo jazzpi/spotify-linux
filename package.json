@@ -1,7 +1,7 @@
 {
   "name": "spotify-linux",
   "main": "./lib/spotify-linux",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Spotify integration for Linux",
   "repository": "https://github.com/jazzpi/spotify-linux",
   "license": "MIT",
@@ -9,15 +9,15 @@
     "atom": ">=0.174.0 <2.0.0"
   },
   "dependencies": {
-     "abstract-socket": "git://github.com/jazzpi/node-abstractsocket.git",
-     "dbus-native": "^0.1.3"
+    "abstract-socket": "git://github.com/jazzpi/node-abstractsocket.git",
+    "dbus-native": "^0.1.3"
   },
   "providedServices": {
-      "spotify-linux": {
-          "description": "Spotify integration for Linux",
-          "versions": {
-              "0.1.0": "provideSpotify"
-          }
+    "spotify-linux": {
+      "description": "Spotify integration for Linux",
+      "versions": {
+        "0.1.0": "provideSpotify"
       }
+    }
   }
 }
