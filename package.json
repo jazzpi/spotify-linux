@@ -2,8 +2,8 @@
   "name": "spotify-linux",
   "main": "./lib/spotify-linux",
   "version": "0.1.0",
-  "description": "Manage the Spotify application for Linux",
-  "repository": "https://github.com/atom/spotify-linux",
+  "description": "Spotify integration for Linux",
+  "repository": "https://github.com/jazzpi/spotify-linux",
   "license": "MIT",
   "engines": {
     "atom": ">=0.174.0 <2.0.0"
