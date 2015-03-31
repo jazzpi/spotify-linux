@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "abstract-socket": "git://github.com/jazzpi/node-abstractsocket.git",
-    "dbus-native": "^0.1.3"
+    "dbus-native": "^0.1.3",
+    "event-kit": "^1.0.3"
   },
   "providedServices": {
     "spotify-linux": {
