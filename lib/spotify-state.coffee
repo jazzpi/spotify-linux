@@ -26,7 +26,6 @@ module.exports =
         '/org/mpris/MediaPlayer2', 'org.freedesktop.DBus.Properties',
         (err, @_DBusInterface) =>
           if err?
-            console.log err
             # Spotify isn't running
             @running = false
             return

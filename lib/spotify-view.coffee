@@ -11,7 +11,6 @@ module.exports =
         @statusBar.addLeftTile(item: @element, priority: 100)
 
     update: ->
-      console.log @state
       unless @state.running
         @element.classList.add 'hidden'
         return
