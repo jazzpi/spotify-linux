@@ -26,7 +26,7 @@ module.exports =
 
       'spotify-linux:toggle-play': => @togglePlay()
 
-    atom.packages.once 'activated', =>
+    atom.packages.onDidActivateInitialPackages =>
       @view = new SpotifyView @state, document.querySelector('status-bar')
       @view.update()
       @subscriptions.add @state.onDidChange =>
