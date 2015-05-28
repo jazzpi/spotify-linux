@@ -12,6 +12,7 @@ module.exports =
       @running = false
       @playing = false
       @updateRunning()
+      setInterval(@updateRunning, 5000)
 
     onDidChange: (callback) ->
       @emitter.on 'did-change', callback
@@ -21,13 +22,14 @@ module.exports =
       @_sessionBus.removeMatch("type='signal',member='PropertiesChanged'")
       @_sessionBus.signals.removeListener(PROPERTY_CHANGED, @updateData)
 
-    updateRunning: (updateAfter = true) ->
+    updateRunning: (updateAfter = true) =>
       @_sessionBus.getService('org.mpris.MediaPlayer2.spotify').getInterface(
         '/org/mpris/MediaPlayer2', 'org.freedesktop.DBus.Properties',
         (err, @_DBusInterface) =>
           if err?
             # Spotify isn't running
             @running = false
+            @emitter.emit 'did-change'
             return
           @running = true
           if updateAfter

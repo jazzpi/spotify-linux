@@ -14,6 +14,8 @@ module.exports =
       unless @state.running
         @element.classList.add 'hidden'
         return
+      else
+        @element.classList.remove 'hidden'
       placeholders =
         p: if @state.playing then '<span class="icono-play"></span>' else
           '<span class="icono-pause"></span>'
