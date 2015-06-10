@@ -24,7 +24,7 @@ module.exports =
         A: @state.album
         a: @state.artist
         r: @state.autoRating
-        y: @state.created[...4]
+        y: @state.created?[...4]
         d: @state.discNumber
         t: @state.title
         n: @state.tracknumber
