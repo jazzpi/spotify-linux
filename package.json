@@ -1,7 +1,7 @@
 {
   "name": "spotify-linux",
   "main": "./lib/spotify-linux",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Spotify integration for Linux",
   "repository": "https://github.com/jazzpi/spotify-linux",
   "os": [
