@@ -4,6 +4,9 @@
   "version": "0.3.1",
   "description": "Spotify integration for Linux",
   "repository": "https://github.com/jazzpi/spotify-linux",
+  "os": [
+    "linux"
+  ],
   "license": "MIT",
   "engines": {
     "atom": ">=0.174.0 <2.0.0"
